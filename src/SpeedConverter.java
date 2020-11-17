@@ -14,5 +14,7 @@ public class SpeedConverter {
         if(kilometersPerHour < 0) {
             return -1;
         }
+        long milesPerHour = Math.round(kilometersPerHour / 1.609);
+        return milesPerHour;
     }
 }
